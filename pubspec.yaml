@@ -17,6 +17,8 @@ dependencies:
   flutter_charts:
   http: ^0.13.4
   google_fonts: ^4.0.4
+  sizer: ^2.0.15
+
 
 
 #  syncfusion_flutter_charts: ^22.1.38
