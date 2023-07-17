@@ -4,9 +4,9 @@ import '../utils/model/dummy_response.dart';
 import 'package:http/http.dart' as http;
 
 class HomeViewsRepository {
-  Future<List<DummyResponse>> fetchDummyData() async {
+  Future<List<DummyResponse>> fetchDummyData(String url) async {
     final response = await http.get(
-        Uri.parse('https://retoolapi.dev/Wax7BM/dummyAxisData'));
+        Uri.parse(url));
 
     if (response.statusCode == 200) {
       final List<dynamic> jsonResponse = json.decode(response.body);
